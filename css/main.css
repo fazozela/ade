@@ -1,0 +1,105 @@
+/* =================================================================== 
+
+
+
+/* ===================================================================
+ * # stats 
+ *
+ * ------------------------------------------------------------------- */
+.s-stats {
+  padding-top: .2rem;
+  padding-bottom: 2.2rem;
+  background-image: url(../img/mk2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  
+}
+.s-stats::before {
+  display: block;
+  content: "";
+  background-color: #050505;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.stats {
+  text-align: center;
+}
+.stats__col {
+  margin: 5.4rem 0;
+  padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.stats__count {
+  font-family: "metropolis-light", sans-serif;
+  font-size: 9.2rem;
+  line-height: 1;
+  color: #ffffff;
+  padding-bottom: 1.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+.stats__count::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
+}
+.stats h5 {
+  font-family: "metropolis-regular", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.333;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 1.8rem;
+  position: relative;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * stats
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+  .stats {
+    max-width: 900px;
+  }
+  .stats__col {
+    margin: 3rem 0;
+  }
+  .stats__count {
+    font-size: 9rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .stats__count {
+    font-size: 8.4rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .s-stats {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .stats__count {
+    font-size: 8.2rem;
+  }
+}
+
+
